@@ -1,5 +1,4 @@
 import numpy as np
-import struct
 import wave
 import os
 

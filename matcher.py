@@ -3,8 +3,6 @@ from __future__ import annotations
 from collections import defaultdict
 from typing import Any, Optional, Protocol
 
-import numpy as np
-
 
 class DatabaseProtocol(Protocol):
     def lookup_hash(self, hash_val: int) -> list[dict[str, Any]]: ...
