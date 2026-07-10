@@ -1,0 +1,15 @@
+services:
+  fingerprint:
+    build: .
+    volumes:
+      - audio_files:/app/audio
+      - db_data:/app/data
+    healthcheck:
+      test: ["CMD", "python", "fingerprint_app.py", "--version"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  audio_files:
+  db_data:

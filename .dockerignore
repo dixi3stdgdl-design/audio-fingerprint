@@ -1,0 +1,13 @@
+__pycache__
+*.pyc
+.pytest_cache
+test_stats.db
+*.sqlite
+demo/
+docs/
+tests/
+.git
+.github
+.gitignore
+*.md
+LICENSE
